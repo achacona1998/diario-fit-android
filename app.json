@@ -1,25 +1,26 @@
 {
   "expo": {
-    "name": "android-app",
-    "slug": "android-app",
+    "name": "Diario Fit",
+    "slug": "diario-fit",
     "version": "1.0.0",
     "orientation": "portrait",
+    "platforms": ["android"],
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
+      "package": "com.diariofit.app",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#173C2A",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      "expo-sharing",
+      "expo-notifications"
+    ]
   }
 }
